@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Kitchen</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico" />
+    <!-- link font icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
+        integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap css file cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- font family -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@200;300;400;500;600;700&family=Playball&display=swap"
+        rel="stylesheet">
+    <!-- flatpickr -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!-- local css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark ">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="image/white-logo.webp" alt="logo" class="img-fluid logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="change-nav navbar-nav ms-auto mb-2 mb-lg-0 me-5">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html#Service">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <header class="banner-3">
+            <div class="container ">
+                <div class="row p-top-1">
+                    <div class="col-12 text-center">
+                        <h2 class="display-6 d-flex justify-content-center align-item-center mb-3">Menu</h2>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section class="menu-item-section pb-lg-5 pb-3 pt-lg-5 pt-3">
+        <div class="container">
+            <div class="row ">
+                <div id="recipeCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="col-lg-2 col-md-2 col-4">
+                                <a href="#Unique Burger">
+                                    <div class="m active">
+                                        <div class="class w-100">
+                                            <div class="menu-item">
+                                                <img src="image/Chicken Burger.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="menu-item-text">
+                                            <h5 class="text-center">Unique Burger</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-lg-2 col-md-2 col-4">
+                                <a href="#Rice & Biryanis">
+                                    <div class="m">
+                                        <div class="class w-100">
+                                            <div class="menu-item">
+                                                <img src="image/biryani.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="menu-item-text">
+                                            <h5 class="text-center">Rice & Biryanis</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-lg-2 col-md-2 col-4">
+                                <a href="#Breads">
+                                    <div class="m">
+                                        <div class="class w-100">
+                                            <div class="menu-item">
+                                                <img src="image/Cheese Naan.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="menu-item-text">
+                                            <h5 class="text-center">Breads</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-lg-2 col-md-2 col-4">
+                                <a href="#Non-veg main course">
+                                    <div class="m">
+                                        <div class="class w-100">
+                                            <div class="menu-item">
+                                                <img src="image/Mutton Curry.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="menu-item-text">
+                                            <h5 class="text-center">Non-veg main course</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-lg-2 col-md-2 col-4">
+                                <a href="#Non-veg starter">
+                                    <div class="m">
+                                        <div class="class w-100">
+                                            <div class="menu-item">
+                                                <img src="image/Chicken nuggets.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="menu-item-text">
+                                            <h5 class="text-center">Non-veg starter</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-lg-2 col-md-2 col-4">
+                                <a href="#Veg main course">
+                                    <div class="m">
+                                        <div class="class w-100">
+                                            <div class="menu-item">
+                                                <img src="image/f8.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="menu-item-text">
+                                            <h5 class="text-center">Veg main course</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-lg-2 col-md-2 col-4">
+                                <a href="#Veg starter">
+                                    <div class="m">
+                                        <div class="class w-100">
+                                            <div class="menu-item">
+                                                <img src="image/f8.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="menu-item-text">
+                                            <h5 class="text-center">Veg starter</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-lg-2 col-md-2 col-4">
+                                <a href="#Our special">
+                                    <div class="m">
+                                        <div class="class w-100">
+                                            <div class="menu-item">
+                                                <img src="image/f8.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="menu-item-text">
+                                            <h5 class="text-center">Our special</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-lg-2 col-md-2 col-4">
+                                <a href="#Chinese rice & noodles">
+                                    <div class="m">
+                                        <div class="class w-100">
+                                            <div class="menu-item">
+                                                <img src="image/Chicken Fried Rice.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="menu-item-text">
+                                            <h5 class="text-center">Chinese rice & noodles</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-lg-2 col-md-2 col-4">
+                                <a href="#Chinese corner">
+                                    <div class="m">
+                                        <div class="class w-100">
+                                            <div class="menu-item">
+                                                <img src="image/f8.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="menu-item-text">
+                                            <h5 class="text-center">Chinese corner</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-lg-2 col-md-2 col-4">
+                                <a href="#Sandwich">
+                                    <div class="m">
+                                        <div class="class w-100">
+                                            <div class="menu-item">
+                                                <img src="image/Paneer Tikka Sandwich.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="menu-item-text">
+                                            <h5 class="text-center">Sandwich</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-lg-2 col-md-2 col-4">
+                                <a href="#Artisian pasta">
+                                    <div class="m">
+                                        <div class="class w-100">
+                                            <div class="menu-item">
+                                                <img src="image/pasta.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="menu-item-text">
+                                            <h5 class="text-center">Artisian pasta</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-lg-2 col-md-2 col-4">
+                                <a href="#Sides dishes">
+                                    <div class="m">
+                                        <div class="class w-100">
+                                            <div class="menu-item">
+                                                <img src="image/Potato Wedges.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="menu-item-text">
+                                            <h5 class="text-center">Sides dishes</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-lg-2 col-md-2 col-4">
+                                <a href="#Hot shots">
+                                    <div class="m">
+                                        <div class="class w-100">
+                                            <div class="menu-item">
+                                                <img src="image/Manchow Soup.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="menu-item-text">
+                                            <h5 class="text-center">Hot shots</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Unique Burger" class="menu-section pt-lg-5 pt-3 pb-lg-5 pb-3">
+        <div class="container">
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/Chicken_Burger.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 ">
+                    <div class="menu">
+                        <h1 class="pt-5">Unique Burger</h1>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/Chicken_Burger.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>Aloo Patty Burger <Span class="float-end">₹ 125</Span></h5>
+                        <p>On top with deep fried Potato Patty With Seasoning</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>Paneer Peri-Peri Burger <Span class="float-end">₹ 130</Span></h5>
+                        <p>seasoned cottage cheese with unigue peri-peri sayce & served with peri</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>Chilly Cheesy Paneer Burger <Span class="float-end">₹ 130</Span></h5>
+                        <p>classic chilly paneer cubes mounted with crown</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>Panner Tikka Burger <Span class="float-end">₹ 135</Span></h5>
+                        <p>marinated cottage cheese in unique style</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>Crispy Chicken Burger <Span class="float-end">₹ 140</Span></h5>
+                        <p>crisp-crisp crispy tender chicken</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>cheesy chicken tikka burger <Span class="float-end">₹ 155</Span></h5>
+                        <p>marinated chicken chunks with indian herbs</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chef's special burger <Span class="float-end">₹ 175</Span></h5>
+                        <p>chef's unique style of double chicken patty burger basted on base ontop with crown</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Rice & Biryanis" class="menu-section pt-lg-5 pt-3 pb-lg-5 pb-3">
+        <div class="container">
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/rice.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 ">
+                    <div class="menu">
+                        <h1 class="pt-5">Rice & Biryanis</h1>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/biryani.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>steam rice <Span class="float-end">₹ 120</Span></h5>
+                        <p>par boiled rice cooked in pot with hot steam</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>jeera rice <Span class="float-end">₹ 140</Span></h5>
+                        <p>cooked & flavoured riced tempered</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5> Curd Rice <Span class="float-end">₹ 145</Span></h5>
+                        <p>cooked flavoured rice mix well with youghurt in southern style</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>peas pulao <Span class="float-end">₹ 155</Span></h5>
+                        <p>traditionally indian style cooked rice with peas and spices</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>veg biryani <Span class="float-end">₹ 190</Span></h5>
+                        <p>aromatic rice cooked with veggies, herbs and biryani masala</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>paneer biryani <Span class="float-end">₹ 215</Span></h5>
+                        <p>aromatic rice cooked with cattage cheese in indian style</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>egg biryani <Span class="float-end">₹ 215</Span></h5>
+                        <p>basmati rice cooked with indian style herbs & masala</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chicken biryani <Span class="float-end">₹ 245</Span></h5>
+                        <p>aromatic basmati rice , flavored with indian herbs & layers of chicken</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>mutton biryani <Span class="float-end">₹ 275</Span></h5>
+                        <p>layered of mutton cooked on slow fire to extract flavor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Breads" class="menu-section pt-lg-5 pt-3 pb-lg-5 pb-3">
+        <div class="container">
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/Cheese Naan.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 ">
+                    <div class="menu">
+                        <h1 class="pt-5">Breads</h1>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/Cheese Naan1.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>tandoori roti <Span class="float-end">₹ 20</Span></h5>
+                        <p>indian traditional flat bread made with wheat flour</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>butter roti <Span class="float-end">₹ 25</Span></h5>
+                        <p>flat bread basted with butter</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5> laccha paratha <Span class="float-end">₹ 45</Span></h5>
+                        <p>multi layerred bread with butter made up of all purpose flour</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>plain naan <Span class="float-end">₹ 35</Span></h5>
+                        <p>leavened flat bread baked in clay oven</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>butter naan <Span class="float-end">₹ 40</Span></h5>
+                        <p>leavened flat bread with butter</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chilli garlic naan <Span class="float-end">₹ 50</Span></h5>
+                        <p>leavened flat bread with chilli garlic butter</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>cheese naan <Span class="float-end">₹ 70</Span></h5>
+                        <p>leavened flat bread stuffed with cheesy cheese</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>stuffed kulcha <Span class="float-end">₹ 60</Span></h5>
+                        <p>leavened flat bread filled with mashed potatoes & indian spices</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>missi roti<Span class="float-end">₹ 40</Span></h5>
+                        <p>indian traditional bread mix with wheat & gram flour basted with desi ghee</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>bread basket<Span class="float-end">₹ 140</Span></h5>
+                        <p>unique combination of plain naan-lachha paratha- chilly garlic naan-tandoori roti-missi roti
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Non-veg main course" class="menu-section pt-lg-5 pt-3 pb-lg-5 pb-3">
+        <div class="container">
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/chicken Tikka Masala.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 ">
+                    <div class="menu">
+                        <h1 class="pt-5">
+                            Non-veg main course</h1>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/Mutton Curry.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>egg curry <Span class="float-end">₹ 195</Span></h5>
+                        <p>delecious onion tomato gravy infused with hard boiled egg</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>butter chicken <Span class="float-end">₹ 290</Span></h5>
+                        <p>marinated grilled chicken rice with smooth buttery, creamy tomato gravy & silk texture</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5> chicken changeyzi <Span class="float-end">₹ 290</Span></h5>
+                        <p>popular mughlai curry made with roasted chicken cooked in gravy to give perfect taste!</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>kadhai chicken <Span class="float-end">₹ 310</Span></h5>
+                        <p>delicious ,spicy & flavorful chicken made with freshly grounded spices</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chicken kolhapuri <Span class="float-end">₹ 310</Span></h5>
+                        <p>chicken chunks marinated & cooked in riched tomato gravy with kolhapuri spices</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chicken tikka masala <Span class="float-end">₹ 310</Span></h5>
+                        <p>marinated boneless chicken pieces cooked in tandoor & tomato cream sauce</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chicken do pyaza <Span class="float-end">₹ 310</Span></h5>
+                        <p>marinated chicken chunks cooked in a variety of spices, yogurt & kasoori methi</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chicken korma <Span class="float-end">₹ </Span></h5>
+                        <p>chicken cooked in a host of spices with fried onions & yogurt</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chicken rara<Span class="float-end">₹ </Span></h5>
+                        <p>flavorful punjabi chicken dish in a thik curry, spiced up with cardamom, yogurt & whole red
+                            chillies</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>mutton rogan josh<Span class="float-end">₹ 335</Span></h5>
+                        <p>kashmiri style mutton curry made with spices like fennel seeds & dry ginger</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>mutton korma<Span class="float-end">₹ 335</Span></h5>
+                        <p>mutton pieces cooked in a bouquet of spices with fried onions & yogurt</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>mutton curry<Span class="float-end">₹ 335</Span></h5>
+                        <p>tender mutton cooked in rich aromatic indian curry</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>mutton laal maans<Span class="float-end">₹ 335</Span></h5>
+                        <p>tender mutton with bone riched in spices with traditional rajsthani style</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>mutton do pyaza<Span class="float-end">₹ 335</Span></h5>
+                        <p>marinated mutton pieces cooked with variety of spices simmered in onion gravy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Non-veg starter" class="menu-section pt-lg-5 pt-3 pb-lg-5 pb-3">
+        <div class="container">
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/Chicken nuggets.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 ">
+                    <div class="menu">
+                        <h1 class="pt-5">
+                            Non-veg starter</h1>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/Chicken nuggets.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chicken popcorn <Span class="float-end">₹ 190</Span></h5>
+                        <p>marinated chicken cubes popped up and deep fried served with dipping </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>arabian chicken wing's <Span class="float-end">₹ 210</Span></h5>
+                        <p>stir fried wings in traditional arabian style</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5> chilli chicken dry <Span class="float-end">₹ 195</Span></h5>
+                        <p>deep fried boneless chicken cubes further cooked in chinese style</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chicken sezhwan dry <Span class="float-end">₹ 195</Span></h5>
+                        <p>bone less chicken cubes tossed in sezhwan sauce</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chicken malai tikka <Span class="float-end">₹ 230</Span></h5>
+                        <p>marinated chicken boneless cubes basted with indian herb & spices</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chicken tikka <Span class="float-end">₹ 220</Span></h5>
+                        <p>marinated chicken cubes in youghurt and indian spices</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chicken kali mirch tikka <Span class="float-end">₹ 220</Span></h5>
+                        <p>marinated chicken cubes with black pepper & cooked with indian spices in screwer</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chicken seekh kebab <Span class="float-end">₹ 220</Span></h5>
+                        <p>minced chicken flavoured with indian spices in screwer</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chicken gilafi seekh kebab<Span class="float-end">₹ 220</Span></h5>
+                        <p>minced chicken mixed with aromatic spices covered with chopped capsicum,onion & hard boiled
+                            egg</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chicken nuggets<Span class="float-end">₹ 220</Span></h5>
+                        <p>bonelesws chicken finger-shaped deep fried and served with peri-peri fries</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>grilled chicken breast<Span class="float-end">₹ 240</Span></h5>
+                        <p>marinated chicken breast chargrilled and served with stir fried veggies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Veg main course" class="menu-section pt-lg-5 pt-3 pb-lg-5 pb-3">
+        <div class="container">
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/shahi_paneer.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 ">
+                    <div class="menu">
+                        <h1 class="pt-5">
+                            Veg main course</h1>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/kadhai_Mushroom.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>dal tadka<Span class="float-end">₹ 190</Span></h5>
+                        <p>tempered with indian spices with crackling sounds</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>dal fry <Span class="float-end">₹ 190</Span></h5>
+                        <p>pot cooked dal fried with indian spices in ghee</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5> dal makhani <Span class="float-end">₹ 220</Span></h5>
+                        <p>simmered simmered whole lentil cooked with butter & cream for unique flavor</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>jeera aloo <Span class="float-end">₹ 180</Span></h5>
+                        <p>hard boiled potatoes tempered with cumin seed & indian spices</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>dum aloo <Span class="float-end">₹ 190</Span></h5>
+                        <p>traditionally cooked baby potato on low heat flame</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>mix veg <Span class="float-end">₹ 210</Span></h5>
+                        <p>cut veretables cooked in traditional indian onion-tomato gravy</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>malai kofta <Span class="float-end">₹ 265</Span></h5>
+                        <p>enriched with white cream gravy cooked with cottage cheese balls</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>paneer kofta <Span class="float-end">₹ 240</Span></h5>
+                        <p>rich, creamy & spicy curry masala cooked with stuffed paneer balls</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>paneer lababdar<Span class="float-end">₹ 245</Span></h5>
+                        <p>authentic combination of cottage cheese & exotic gravy with cashew nut spices</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>paneer do pyaza<Span class="float-end">₹ 245</Span></h5>
+                        <p>unique combination of cottage cheese with home made onion gravy in indian style</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>paneer butter masala<Span class="float-end">₹ 245</Span></h5>
+                        <p>rich, creamy cottage cheese cooked in tomato, butter & ceshew sauce</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>paneer tikka masala<Span class="float-end">₹ 245</Span></h5>
+                        <p>marinated grilled cottage cheese chunks cooked in traditiona spices onion-tomato gravy</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5> paneer kolhapuri<Span class="float-end">₹ 245</Span></h5>
+                        <p>cottage cheese chunks cooked with hot, spiced and robust flavour</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>kadhai paneer<Span class="float-end">₹ 245</Span></h5>
+                        <p>cottage cheese cut into diamond cubes cooked with spicy gravy & kadhai masala</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>akbari paneer pasanda<Span class="float-end">₹ 245</Span></h5>
+                        <p>cottage cheese stuffed with cashewnut and indian spices cooked with onion-tomato gravy in
+                            akbari style</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>shahi paneer<Span class="float-end">₹ 245</Span></h5>
+                        <p>creamy cottage cheese chunks cooked in tomato-cashewnut gravy</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>mushroom do pyaza<Span class="float-end">₹ 240</Span></h5>
+                        <p>bottom mushroom cooked with home made onion gravy in traditional indian style</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>mushroom masala<Span class="float-end">₹ 240</Span></h5>
+                        <p>versatile earthy mushroom burst of flavour with aromatic spices</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>mushroom mattar<Span class="float-end">₹ 240</Span></h5>
+                        <p>creamy and spicy gravy prepared with fresh green peas & mushroom</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>kadhai mushroom<Span class="float-end">₹ 240</Span></h5>
+                        <p>bottom mushroom cooked with home made onion-tomato gravy in traditional style</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Veg starter" class="menu-section pt-lg-5 pt-3 pb-lg-5 pb-3">
+        <div class="container">
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/Veg_Platter.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 ">
+                    <div class="menu">
+                        <h1 class="pt-5">
+                            Veg starter </h1>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/Veg_Platter.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>cheese corn ball <Span class="float-end">₹ 155</Span></h5>
+                        <p>deep fried cheese balls with crush corn & served with our own dipping</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chilli potato/honey chilli potato <Span class="float-end">₹ 170</Span></h5>
+                        <p>crispy potato tossed with chinese style with your choice of flavor</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5> veg manchurian dry <Span class="float-end">₹ 145</Span></h5>
+                        <p>deep fried mixed vegetables dumpling toasted in spicy chinese sauce</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chilli paneer dry <Span class="float-end">₹ 190</Span></h5>
+                        <p>deep fried paneer cubes further cooked inn chinese style</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>paneer sezhwan dry <Span class="float-end">₹ 190</Span></h5>
+                        <p>deep fried paneer cubes further cooked wth sezhwan sauce in chinese style</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>crispy peri-peri veg <Span class="float-end">₹ 190</Span></h5>
+                        <p>mixed seasonal vegetable fried to crispy tossed with spicy peri-peri sauce </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>corn seekh kebab <Span class="float-end">₹ 185</Span></h5>
+                        <p>minced corn blend with indian spices in screw</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>mushroom chilli dry <Span class="float-end">₹ 190 </Span></h5>
+                        <p>crispy mushroom tossed in chinese style</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>babycorn mushroom ginger garlic dry<Span class="float-end">₹ 190 </Span></h5>
+                        <p>chinese cut of babycorn & mushroom tossed with ginger garlic</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>paneer<Span class="float-end">₹ 65</Span></h5>
+                        <p>cottage cheese chunks infused with south indian spices </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>panner tikka<Span class="float-end">₹ 180</Span></h5>
+                        <p>marinated paneer cubes with yoghurt and indian spices cooked in clay oven</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>achari paneer tikka<Span class="float-end">₹ 185</Span></h5>
+                        <p>marinated paneer cubes with indian pickles cooked in clay oven</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>mveg platter<Span class="float-end">₹ 250</Span></h5>
+                        <p>astonished composition of cheese corn ball manchurian balls & paneer tikka</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Our special" class="menu-section pt-lg-5 pt-3 pb-lg-5 pb-3">
+        <div class="container">
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/tandoori chicken.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 ">
+                    <div class="menu">
+                        <h1 class="pt-5">
+                            Our special </h1>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/tandoori chicken.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>paneer tikka wrap <Span class="float-end">₹ 145</Span></h5>
+                        <p>marinated paneer chunks wrap in tortilla bread</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chicken tikka wrap <Span class="float-end">₹ 165</Span></h5>
+                        <p>marinated chicken chunks wrap in tortilla bread</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5> paneer peri-peri roll <Span class="float-end">₹ 155</Span></h5>
+                        <p>marinated cottage cheese with peri-peri sauce</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chicken peri-peri roll <Span class="float-end">₹ 175</Span></h5>
+                        <p>marinated chicken chunks with peri-peri sauce</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>veg quesadilla <Span class="float-end">₹ 145</Span></h5>
+                        <p>stuffed with piping hot cheese & mexican veggie</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chicken quesadilla<Span class="float-end">₹ 165</Span></h5>
+                        <p>stuffed shredded chicken with cheese & served with sour cream</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>tandoori mix grill platter <Span class="float-end">₹ 345</Span></h5>
+                        <p>tempting combination of chicken tikka, chicken seekh kebab & chicken kali mirch tikka</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>alfaham chicken <Span class="float-end">Half - ₹ 275 Full - ₹ 475 </Span></h5>
+                        <p>whole chicken marinated in arabian style & cooked in clay oven</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>tandoori chicken<Span class="float-end">Half - ₹ 275 Full - ₹ 475 </Span></h5>
+                        <p>whole chicken marinated with indian spices and cooked in clay oven</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Chinese rice & noodles" class="menu-section pt-lg-5 pt-3 pb-lg-5 pb-3">
+        <div class="container">
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/Schezwan_Fried_Rice.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 ">
+                    <div class="menu">
+                        <h1 class="pt-5">
+                            Chinese rice & noodles </h1>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/Vegetable_Hakka_Noodle.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>veg fried rice <Span class="float-end">₹ 145</Span></h5>
+                        <p>flavored rice with finely chopped veggies & seasoning </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>schezwan fried rice <Span class="float-end">₹ 155</Span></h5>
+                        <p>hot & spicy with bursting flavor of ginger & garlic, soya sauce red chillies </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5> egg & garlic fried rice <Span class="float-end">₹ 160</Span></h5>
+                        <p>stirred fried in chinese wok with egg and garlic</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chicken fried rice <Span class="float-end">₹ 180</Span></h5>
+                        <p>chinese cut chicken cooked in wok with flavor rice</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>schezwan chicken fried rice <Span class="float-end">₹ 185</Span></h5>
+                        <p>chicken stired fried with schezwan sauce with spicy & tangy taste buds</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>hakka noodle's<Span class="float-end">₹ 145</Span></h5>
+                        <p>stir fried noodles with veggies and sauces</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>asian veggie noodle's <Span class="float-end">₹ 155</Span></h5>
+                        <p>noodles cooked in chinese wok with asian veggie</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chilli garlic noodle's <Span class="float-end">₹ 165</Span></h5>
+                        <p>noodles cooked with hot spicy chilli garlic sauce</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>schezwan noodle's<Span class="float-end">₹ 165 </Span></h5>
+                        <p>boiled noodles cooked with scezwan sauce </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>veg singapore noodle's<Span class="float-end">₹ 160 </Span></h5>
+                        <p>indo-chinese fusion-cooked with curry powder and noodles </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>paneer noodle's<Span class="float-end">₹ 175 </Span></h5>
+                        <p>stirred fried noodle's cooked with fried cottage cheese</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Chinese corner" class="menu-section pt-lg-5 pt-3 pb-lg-5 pb-3">
+        <div class="container">
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/Manchurian_Gravy.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 ">
+                    <div class="menu">
+                        <h1 class="pt-5">
+                            Chinese corner </h1>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/Manchurian_Gravy.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>veg manchurian gravy <Span class="float-end">₹ 175</Span></h5>
+                        <p>indo chinese of fried veggie ball in spicy, sweet & tangy sauce </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>babycorn ginger garlic (hot garlic sauce /sezhwan sauce) <Span class="float-end">₹
+                                195</Span></h5>
+                        <p>babycorn stir fried in hot ginger garlic sauce</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5> chilli paneer gravy <Span class="float-end">₹ 210</Span></h5>
+                        <p>cottage cheese fried & stirred with spicy soya sauce</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>veg chinese sizzler <Span class="float-end">₹ 230</Span></h5>
+                        <p>unique combination of veg manchurian ball, chilly paneer served with fried rice & noodles
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>veg mongolian curry with fried rice <Span class="float-end">₹ 230</Span></h5>
+                        <p>crispy stir fried vegetables tossed with sweet and tangy sauce cooked in chinese style </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chilli chicken gravy<Span class="float-end">₹ 230</Span></h5>
+                        <p>chinese cut chicken stirred fried served with spicy soya sauce</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>shredded chicken (hot garlic sauce / sezhwan sauce) <Span class="float-end">₹ 230</Span>
+                        </h5>
+                        <p>shredded chicken cooked with the choice of sauce you prefer</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chicken chinese sizzler <Span class="float-end">₹ 260</Span></h5>
+                        <p>indo chinese hot sizzler consist of chk manchurian ball, chilli chk & served with scezhwan
+                            fried rice & noodles</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chicken sezhwan gravy<Span class="float-end">₹ 230 </Span></h5>
+                        <p>stirred fried chicken cooked in schezwan sauce made with hot chillies, ginger & garlic </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chicken mongolian curry with fried rice<Span class="float-end">₹ 260 </Span></h5>
+                        <p>crispy chicken breast stired fried with sweet & tangy sauce in chinese style </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Sandwich" class="menu-section pt-lg-5 pt-3 pb-lg-5 pb-3">
+        <div class="container">
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/Chicken_Fried_Sandwich.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 ">
+                    <div class="menu">
+                        <h1 class="pt-5">
+                            Sandwich </h1>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/Paneer Tikka Sandwich.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chutney grilled sandwich <Span class="float-end">₹ 135</Span></h5>
+                        <p>chef's choice veggie basted with indian chutney & grilled </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>veg club sandwich <Span class="float-end">₹ 135</Span></h5>
+                        <p>stuffed with tomato, cucumber, boiled potato</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5> veg grilled sandwich <Span class="float-end">₹ 125</Span></h5>
+                        <p>grilled tomato, cucumber, onion,capsicum</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>paneer tikka sandwich <Span class="float-end">₹ 145</Span></h5>
+                        <p>marinated cottage cheese chunks </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>veg masala mashroom sandwich <Span class="float-end">₹ 155</Span></h5>
+                        <p>stuffed mushroom & indian spices </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chicken tikka sandwich<Span class="float-end">₹ 165</Span></h5>
+                        <p>marinated chicken chunks</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chicken fried sandwich <Span class="float-end">₹ 165</Span></h5>
+                        <p>fried chicken chunks with cajun spices</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chicken club sandwich <Span class="float-end">₹ 170</Span></h5>
+                        <p>basted with mayonnaise on top with cubes of chicken</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id=" Artisian pasta" class="menu-section pt-lg-5 pt-3 pb-lg-5 pb-3">
+        <div class="container">
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/pasta.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 ">
+                    <div class="menu">
+                        <h1 class="pt-5">
+                            Artisian pasta </h1>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/pasta.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>penne arabiata <Span class="float-end">₹ 165</Span></h5>
+                        <p>penne pasta tossed in red sauce with herbs </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>penne alfredo<Span class="float-end">₹ 175</Span></h5>
+                        <p>penne pasta tossed in white sauce with herbs</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5> mixed sauce pasta <Span class="float-end">₹ 180</Span></h5>
+                        <p>penne pasta tossed in pink sauce with itallian herbs</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>chicken pasta <Span class="float-end">₹ 220</Span></h5>
+                        <p>penne pasta cooked with your choice of sauce with chicken chunks & itallian herbs </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id=" Sides dishes" class="menu-section pt-lg-5 pt-3 pb-lg-5 pb-3">
+        <div class="container">
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/French_Fries.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 ">
+                    <div class="menu">
+                        <h1 class="pt-5">
+                            Sides dishes </h1>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/Potato Wedges.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>french fries <Span class="float-end">₹ 65</Span></h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>peri-peri fries<Span class="float-end">₹ 75</Span></h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5> potato wedges <Span class="float-end">₹ 75</Span></h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>garlic bread <Span class="float-end">₹ 55</Span></h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>garlic cheese bread <Span class="float-end">₹ 65</Span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Hot shots" class="menu-section pt-lg-5 pt-3 pb-lg-5 pb-3">
+        <div class="container">
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/Manchow Soup.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 ">
+                    <div class="menu">
+                        <h1 class="pt-5">
+                            Hot shots </h1>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="menu-img">
+                        <img src="image/Tomato_Soup.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-lg-5 mb-3">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>tomato soup <Span class="float-end">₹ 85</Span></h5>
+                        <p>tomato based soup serve with baked croutons </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>minestrone<Span class="float-end">₹ 85</Span></h5>
+                        <p>ittalian based soup with veggies & pasta</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5> mexican tortilla soup <Span class="float-end">₹ 80</Span></h5>
+                        <p>traditional mexican style soup with fried tortilla chips</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>manchow soup <Span class="float-end">₹ 80</Span></h5>
+                        <p>chinese style thick mixed veggie soup served with crispy fried noodles </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>lemon coriander soup <Span class="float-end">₹ 75</Span></h5>
+                        <p>piping hot chinese soup infused with the flavour of lemon & coriander </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>veg clear soup <Span class="float-end">₹ 75</Span></h5>
+                        <p>thin soup with smeared veggies</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="menu-1 mt-3">
+                        <h5>hot & sour <Span class="float-end">₹ 85</Span></h5>
+                        <p>traditional chinese style soup with spicy & tangy in taste</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row p-5">
+                <div class="col-lg-4 mb-3">
+                    <div class="important-link">
+                        <h6 class="hr-line">Company</h6>
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">Reservation</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Terms & Condition </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="contact-info">
+                        <h6 class=" hr-line">Contact</h6>
+                        <p><i class="fas fa-map-marker-alt"></i> <a href="https://www.google.com/maps/place/Calorie+Kitchen+(formerly+known+as+The+Brew+Kitchen)/@26.8952151,83.9760148,17z/data=!3m1!4b1!4m5!3m4!1s0x39938db3efa26353:0xc9d3333baef0e828!8m2!3d26.8952151!4d83.9782035"
+                             target="_blank">In Front of Sahu Palace, Near PD Mall, Padrauna, Kushinagar 274304</a></p>
+                        <p><i class="fas fa-mobile"></i> <a href="tel:+918009872345">8009872345</a> , 
+                            <a href="tel:+919621762629">9621762629</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@calorie-kitchen.com">info@calorie-kitchen.com</a></p>
+                        <p><i class="fas fa-link"></i> <a href="index.html">www.calorie-kitchen.com</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="open-time">
+                        <h6 class="hr-line">Opening</h6>
+                        <p>Monday - Saturday <br><span>09:00 AM - 09:00 PM</span></p>
+                        <p>Sunday <br><span>10:00 AM - 08:00 PM</span></p>
+                        <ul>
+                            <li><a href="https://www.facebook.com/caloriepadrauna" target="_blank"><img src="/image/facebook (2).webp" alt=""
+                                        class="img-fluid"></a></li>
+                            <li><a href="https://wa.me/+918009872345" target="_blank"><img src="/image/whatsapp (2).webp" alt=""
+                                        class="img-fluid"></a></li>
+                            <li><a href="https://www.instagram.com/calorie_kitchen_padrauna/" target="_blank"><img src="/image/instagram (2).webp" alt=""
+                                        class="img-fluid"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="branded-footer">
+        <div class="container-fluid">
+            <div class="row  border-top-1">
+                <div class="col-lg-12">
+                    <p class="text-center m-0 py-4">&#169 2022 <a href="index.html">Calorie Kitchen</a> All Rights
+                        Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div>
+        <div class="scroll-icon">
+            <span id="scroll-top"><i class="fas fa-arrow-up"></i></span>
+        </div>
+    </div>
+
+
+
+
+    <!-- bootstrap js file -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <!-- flatpickr -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- local js file -->
+    <script src="js/calorie.js"></script>
+</body>
+
+</html>
